@@ -285,20 +285,15 @@
 
 <script>
   var WHATSAPP_NUMBER = "5563992315475";
-
-  function waLink() {
-    var msg = "Olá! Gostaria de fazer uma reserva.";
-    return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg);
-  }
+  var MSG = "Olá! Gostaria de fazer uma reserva.";
 
   document.querySelectorAll("[data-wa]").forEach(function (a) {
-    a.href = waLink();
+    a.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(MSG);
     a.target = "_blank";
     a.rel = "noopener";
     a.addEventListener("click", function () {
-      // Conversão do Google Ads: troque o send_to pelo valor da sua conversão
       if (typeof gtag === "function") {
-        gtag("event", "conversion", { send_to: "AW-18325213025/XXXXXXXX" });
+        gtag("event", "conversion", { send_to: "AW-18325213025/a6CJCPOOya8dEOGekqJE" });
       }
     });
   });
