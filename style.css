@@ -53,15 +53,15 @@ header.top {
   padding: 14px 0;
 }
 header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.logo { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 800; font-size: 1.1rem; }
-.logo svg { width: 40px; height: 40px; }
-.logo small { display: block; font-weight: 500; font-size: .72rem; opacity: .85; margin-top: -2px; }
+.logo { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 800; font-size: 1.7rem; line-height: 1.05; font-style: italic; }
+.logo img { width: 40px; height: 40px; }
+.logo small { display: block; font-size: .8rem; letter-spacing: .08em; font-weight: bold; opacity: .9; }
 .top-cta { display: none; padding: 10px 18px; font-size: .95rem; }
 
 /* Hero */
 .hero {
   position: relative; color: #fff; overflow: hidden;
-  background: linear-gradient(160deg, #0f766e 0%, #115e59 55%, #134e4a 100%);
+  background: linear-gradient(160deg, #144925 0%, #0f3a1d 55%, #0a2c15 100%);
   padding: 96px 0 56px;
 }
 .hero::before { /* troque por uma foto real: background:url(foto.jpg) center/cover */
@@ -75,7 +75,7 @@ header.top .wrap { display: flex; align-items: center; justify-content: space-be
   display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.3);
   padding: 6px 14px; border-radius: 999px; font-size: .85rem; font-weight: 600; margin-bottom: 16px;
 }
-.hero h1 { font-size: 2.1rem; font-weight: 800; }
+.hero h1 { font-size: 1.9rem; font-weight: 800; }
 .hero h1 span { color: #fde68a; }
 .hero p { font-size: 1.1rem; margin: 16px 0 24px; max-width: 34ch; opacity: .95; }
 .hero-actions { display: grid; gap: 12px; }
@@ -99,12 +99,12 @@ header.top .wrap { display: flex; align-items: center; justify-content: space-be
 /* Quartos */
 .rooms { display: grid; gap: 16px; }
 .room { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-.room-img { aspect-ratio: 16 / 9; background: #e2e8f0; }
+.room-img { aspect-ratio: 8 / 3; background: #e2e8f0; }
 .room-img svg { width: 100%; height: 100%; }
 .room-body { padding: 18px; }
 .room h3 { font-size: 1.2rem; }
 .room ul { list-style: none; padding: 0; margin: 12px 0 16px; display: grid; gap: 6px; color: var(--muted); font-size: .95rem; }
-.room li::before { content: "✓"; color: var(--brand); font-weight: 800; margin-right: 8px; }
+.room li::before { content: "\2713"; color: var(--brand); font-weight: 800; margin-right: 8px; }
 
 /* Como reservar */
 .steps-bg { background: var(--brand-soft); }
@@ -156,7 +156,7 @@ footer { padding: 28px 0 40px; text-align: center; color: var(--muted); font-siz
   .hero-actions { grid-auto-flow: column; justify-content: start; }
   .top-cta { display: inline-flex; }
   .features { grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  .rooms { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .rooms { grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .steps { grid-template-columns: repeat(3, 1fr); }
   .location { grid-template-columns: 1fr 1.3fr; align-items: stretch; }
   .address-card .actions { grid-auto-flow: row; }
